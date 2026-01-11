@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int idade = 0;
+    float peso = 0;
+    printf("Valor inicial do peso: %f\n", peso);
+    printf("Valor inicial da idade: %d.\n", idade);
+    printf("Digite uma idade:\n");
+    scanf("%d", &idade);
+
+    printf("Digite um peso:\n");
+    scanf("%f", &peso);
+
+    printf("Idade informada: %d.\n", idade);
+    printf("Peso informado: %.2f.\n", peso);
+
+}
