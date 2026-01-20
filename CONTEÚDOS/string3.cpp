@@ -2,7 +2,7 @@
 #include <locale.h>
 #include <string.h>
 
-#define N 20
+#define N 50
 
 int main () {
     setlocale(LC_ALL, "Portuguese");
@@ -31,4 +31,6 @@ int main () {
 
     if (ok==0)
         printf("Textos iguais.\n");
+    else
+        printf("Textos diferentes.\n");
 }
