@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 int main() {
     //Faça um programa que leia 4 números e faça a soma deles.
     int n1, n2, n3, n4, s;
@@ -12,7 +12,6 @@ int main() {
     s = n1 + n2 + n3 + n4;
 
     printf("O resultado da soma entre os quatro numeros foi: %d.\n", s);
-
     return 0;
 
 }
