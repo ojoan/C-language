@@ -13,9 +13,9 @@ int main() {
     min = seg/60;
     horas = (seg/60)/60;
 
-    printf("Horas: %2.f.\n", horas);
+    printf("Horas: %.2f.\n", horas);
     printf("minutos: %.2f.\n", min);
-    printf("segundos: %2.f.\n", seg);
+    printf("segundos: %.2f.\n", seg);
 
 
     return 0;
