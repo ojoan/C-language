@@ -22,11 +22,11 @@ Média ponderada                 Conceito
 #include<stdio.h>
 #include<stdlib.h>
 
-int main() {
+int main(int argc, char *argv[]) {
     float tr, av, ex, media;
-    printf("Insira nota do trabalho de laboratório:\n");
+    printf("Insira nota do trabalho de laboratorio:\n");
     scanf("%f", &tr);
-    printf("Insira nota da avaliação semestral:\n");
+    printf("Insira nota da avaliacao semestral:\n");
     scanf("%f", &av);
     printf("Insira nota do exame final:\n");
     scanf("%f", &ex);
@@ -34,13 +34,13 @@ int main() {
     media = (tr*2 + av*3 + ex*5) / 10;
     printf("Media: %.2f.\n", media);
 
-    if (media >= 8.0) {
+    if (media >= 8.0 && media <= 10.0) {
         printf("Nota A");
-    }else if (media >= 7.0) {
+    }else if (media >= 7.0 && media < 8.0) {
         printf("Nota B");
-    }else if (media >= 6.0) {
+    }else if (media >= 6.0 && media < 7.0) {
         printf("Nota C");
-    }else if (media >= 5.0) {
+    }else if (media >= 5.0 && media < 6.0) {
         printf("Nota D");
     }else {
         printf("Nota E");
