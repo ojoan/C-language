@@ -13,8 +13,9 @@ int main() {
     for (num = 1; num <= 10; num++) {
         for (i = 1; i <= 10; i++) {
             res = num * i;
-            printf("%d * %d = %d\n", num, i, res);
+            printf("%d x %d = %d\n", num, i, res);
         }
+        printf("\n");
     }
    */
     //Selecionar qual vai ser o número da tabuada
