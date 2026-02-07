@@ -1,0 +1,43 @@
+/*Sabe-se que o quilowatt de energia custa um milésimo do salário mínimo.
+Faça um procedimento que receba o valor do salário mínimo e quantidade de
+quilowatts consumida por uma residência.
+O procedimento deve calcular e retornar através de passagem de parâmetros
+por referência:
+
+I - O valor, em reais, de cada quilowatt;
+II - O valor, em reais, a ser pago por essa residência;
+III - O valor, em reais, a ser pago com desconto 15%.
+
+Sabendo disso, desenvolva um algoritmo que peça para o usuário inserir o
+valor do salário mínimo e a quantidade de quilowatts consumida.
+Invoque o respectivo procedimento e mostre, na tela, as informações
+dos itens I, II e III.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void calcKW(float v_sal, float q_kw, float *v_kw, float *v_rs, float *v_dsc) {
+    (*v_kw) = v_sal / 1000;
+    (*v_rs) = (*v_kw) * q_kw;
+    (*v_dsc) = (*v_rs) * 0.85;
+}
+
+int main() {
+    float val_sal, qtde_kw, val_kw, val_reais, val_desc;
+
+    printf("Insira o salario minimo:\n");
+    scanf("%f", &val_sal);
+    printf("Insira a quantidade de KW gastos:\n");
+    scanf("%f", &qtde_kw);
+
+    calcKW(val_sal, qtde_kw, &val_kw, &val_reais, &val_desc);
+
+    printf("Valor de 1 KW(em R$): %.2f.\n", val_kw);
+    printf("Valor a ser pago pela residencia(em R$): %.2f.\n", val_reais);
+    printf("Valor com desconto(em R$): %.2f.\n", val_desc);
+
+
+    system ("pause");
+    return 0;
+}
