@@ -8,22 +8,26 @@ suas respectivas posições.*/
 #include<stdlib.h>
 
 int main() {
-    int x, i, cont;
-    printf("Insira um numero inteiro:\n");
-    scanf("%d", &x);
+    int vet[9], i, j, cont;
 
-    cont=0;
-    for (i = 1; i <= x; i++) {
-        if (x % i == 0) {
-            cont++;
+    for (i=0; i<9; i++){
+        printf("Insira um numero inteiro:\n");
+        scanf("%d", &vet[i]);
+    }
+
+    for (i=1; i<9; i++) {
+        cont=0;
+        for (j = 1; j <= vet[i]; j++) {
+            if (vet[i] % j == 0) {
+                cont++;
+            }
+        }
+        if (cont == 2 || cont == 1) {
+            printf("%d e numero primo, posicao: %d.\n", vet[i], i);
+        } else {
+            printf("%d nao e numero primo, posicao: %d.\n", vet[i], i);
         }
     }
-    if (cont == 2 || cont == 1) {
-        printf("%d e numero primo.\n", x);
-    } else {
-        printf("%d nao e numero primo.\n", x);
-    }
-
 
     system("pause");
     return 0;
