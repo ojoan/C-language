@@ -9,16 +9,16 @@ suas respectivas posições.*/
 
 int main() {
     int x, i, cont;
-    printf("Insira um número inteiro:\n");
+    printf("Insira um numero inteiro:\n");
     scanf("%d", &x);
 
     cont=0;
     for (i = 1; i <= x; i++) {
-        if (i % x == 0) {
+        if (x % i == 0) {
             cont++;
         }
     }
-    if (cont == 2) {
+    if (cont == 2 || cont == 1) {
         printf("%d e numero primo.\n", x);
     } else {
         printf("%d nao e numero primo.\n", x);
