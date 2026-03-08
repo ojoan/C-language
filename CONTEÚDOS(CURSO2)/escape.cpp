@@ -15,9 +15,9 @@ int main() {
 
     printf("Nome:\tPedro\n");
 
-    printf("Ele disse: \"Como vai?\"\n");
+    printf("Ele disse: \"Hello world!\"\n");
 
-    printf("Ele disse: \'Como vai?\'\n");
+    printf("Ele disse: \'Hello world!\'\n");
 
     printf("Barra: \\");
 
