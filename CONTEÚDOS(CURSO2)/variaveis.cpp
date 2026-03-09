@@ -24,16 +24,17 @@ int main () {
 
     printf("Exemplo de uso \"scanf()\"\n");
     scanf("%d", &num);
+    getchar(); //limpar o enter para não conflitar com o fgets
     printf("Voce digitou: %d\n", num);
 
 
     printf("Exemplo de uso \"fgets()\"\n");
-    fgets(nome, 50, stdin);
+    fgets(nome, 50, stdin); //stdin indica que o texto sera digitado no teclado
     printf("Voce digitou: %s\n", nome);
 
-    
+
     printf("Exemplo de uso \"getc()\"\n");
-    c = getc(stdin); //stdin significa que a entrada virar do teclado
+    c = getc(stdin);
     printf("Voce digitou: %c\n", c);
 
 
