@@ -19,6 +19,7 @@ int main () {
 
     printf("Exemplo de uso \"getchar()\"\n");
     letra = getchar();
+    getchar();
     printf("Voce digitou: %c\n", letra);
 
 
