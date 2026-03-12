@@ -19,13 +19,13 @@ int main () {
 
     printf("Exemplo de uso \"getchar()\"\n");
     letra = getchar();
-    getchar();
+    while (getchar() != '\n');//limpar o enter para não conflitar com o fgets
     printf("Voce digitou: %c\n", letra);
 
 
     printf("Exemplo de uso \"scanf()\"\n");
     scanf("%d", &num);
-    getchar(); //limpar o enter para não conflitar com o fgets
+    while (getchar() != '\n');
     printf("Voce digitou: %d\n", num);
 
 
