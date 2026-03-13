@@ -2,7 +2,7 @@
 #include<stdlib.h>
 /*
 
-ESPECIFICADOR DE FORMATO
+    ESPECIFICADOR DE FORMATO
 
 %d - Inteiro(int).
 %f - Número decimal(float/double).
