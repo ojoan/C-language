@@ -9,6 +9,13 @@ int main() {
     printf("float = %d\n", sizeof(float));
     printf("double = %d\n", sizeof(double));
 
+    int a;
+    char b;
+    float c;
+
+    printf("\nint = %d\n", sizeof a);
+    printf("char = %d\n", sizeof b);
+    printf("float = %d\n", sizeof c);
 
     return 0;
 }
