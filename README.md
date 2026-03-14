@@ -1,2 +1,2 @@
-# APRENDENDO-LINGUAGEM-C/C++
-Lista de conteúdos de linguagem C/C++
+# Learning C Language
+C/C++ language content list.
