@@ -10,7 +10,7 @@ public:
     int idade;
 
     void apresentar() {
-        cout << "Olá, meu nome é " << nome
+        cout << "Ola, meu nome e " << nome
              << " e eu tenho " << idade << " anos." << endl;
     }
 };
