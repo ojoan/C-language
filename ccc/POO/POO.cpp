@@ -4,55 +4,55 @@
 using namespace std;
 
 // Classe base
-class Pessoa {
+class Person {
 public:
-    string nome;
-    int idade;
+    string name;
+    int age;
 
-    void apresentar() {
-        cout << "Ola, meu nome e " << nome
-             << " e eu tenho " << idade << " anos." << endl;
+    void present() {
+        cout << "Hello, my name is " << name
+             << " and I am " << age << " years old." << endl;
     }
 };
 
 // Classe derivada
-class Aluno : public Pessoa {
+class Student : public Person {
 public:
     int matricula;
 
-    void estudar() {
-        cout << "O aluno esta estudando." << endl << endl;
+    void study() {
+        cout << "The student is studying." << endl << endl;
     }
 };
 
 // Classe derivada
-class Professor : public Pessoa {
+class Professor : public Person {
 public:
-    string disciplina;
+    string discipline;
 
-    void ensinar() {
-        cout << "O professor " << nome
-             << " esta ensinando a disciplina de "
-             << disciplina << "." << endl;
+    void teach() {
+        cout << "Professor " << name
+             << " is teaching the discipline of "
+             << discipline << "." << endl;
     }
 };
 
 int main() {
 
     // aluno
-    Aluno aluno1;
-    aluno1.nome = "Carlos";
-    aluno1.idade = 12;
+    Student student1;
+    student1.name = "Carlos";
+    student1.age = 12;
 
-    aluno1.apresentar();
-    aluno1.estudar();
+    student1.present();
+    student1.study();
 
     // professor
     Professor professor1;
-    professor1.nome = "Leonardo";
-    professor1.disciplina = "Linguagem Orientada a Objetos";
+    professor1.name = "Leonardo";
+    professor1.discipline = "Object-Oriented Language";
 
-    professor1.ensinar();
+    professor1.teach();
 
     return 0;
 }
