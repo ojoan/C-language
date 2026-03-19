@@ -3,18 +3,18 @@
 
 using namespace std;
 
-class Produto {
+class Product {
 private:
     string name;
     double price;
 
 public:
-    Produto(string name, double price){
+    Product(string name, double price){
         this->name = name;
         this->price = price;
     }
 
-    Produto(string name) {
+    Product(string name) {
         this->name = name;
         this->price = 10;
     }
@@ -26,8 +26,8 @@ public:
 
 int main() {
 
-    Produto p1("Pen", 3.5);
-    Produto p2("pencil");
+    Product p1("Pen", 3.5);
+    Product p2("pencil");
 
     p1.showDetails();
     p2.showDetails();
