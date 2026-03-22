@@ -1,6 +1,10 @@
-#include <iostream>
 #include "Dog.h"
+#include <iostream>
 
-void Dog::speak() {
-    std::cout<<"The dog barks"<<std::endl;
+using namespace std;
+
+Dog::Dog(string n) : Animal(n){}
+
+void Dog::bark() {
+    cout<<name<<" is barking: AU AU!"<<endl;
 }

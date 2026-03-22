@@ -1,11 +1,16 @@
-
-#ifndef ANIMAL_H
-#define ANIMAL_H
-
+#ifndef C_ANIMAL_H
+#define C_ANIMAL_H
+#include <string>
+using namespace std;
 
 class Animal {
+protected:
+    string name;
 public:
-    void speak();
+    Animal(string n);
+
+    void eat();
+    void sleep();
 };
 
 

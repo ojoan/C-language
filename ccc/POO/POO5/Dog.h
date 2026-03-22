@@ -1,12 +1,13 @@
-#ifndef DOG_H
-#define DOG_H
-
+#ifndef C_DOG_H
+#define C_DOG_H
 #include "Animal.h"
 
-class Dog : public Animal{
-    public:
-        void speak();
+class Dog : public Animal {
+public:
+    Dog(string n);
+
+    void bark();
 };
 
 
-#endif
+#endif //C_DOG_H
