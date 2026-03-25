@@ -11,7 +11,7 @@ private:
     double grade;
 
 public:
-    Student(String name, int registration, double grade);
+    Student(string name, int registration, double grade);
 
     string getName();
     void setName(string name);

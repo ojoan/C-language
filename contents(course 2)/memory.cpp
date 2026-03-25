@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Como descobrir o tamanho em memória de cada tipo de dado com o operador sizeof.
+//How to find the memory size of each data type using the sizeof operator
 
 int main() {
     printf("int = %d\n", sizeof(int));
