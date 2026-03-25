@@ -23,4 +23,16 @@ int main() {
     v3=v4--;
     printf("\n\nV3 value: %d\tV4 value: %d",v3,v4);
 
+//unsigned operator(%u for int, %hu for float, %lu for double)
+//eliminates negatives numbers == save memory
+
+unsigned int a,b,c;
+
+    a=2147483647;
+    b=1;
+    c=a+b;
+
+    printf("\n\na: %u\tb: %u\tc: %u",a,b,c);
+    printf("\nSize: %d", sizeof a);
+
 }
