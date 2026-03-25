@@ -24,7 +24,7 @@ int main() {
     printf("\n\nV3 value: %d\tV4 value: %d",v3,v4);
 
 //unsigned operator(%u for int, %hu for float, %lu for double)
-//eliminates negatives numbers == save memory
+//eliminates negatives numbers == save memory <3
 
 unsigned int a,b,c;
 
